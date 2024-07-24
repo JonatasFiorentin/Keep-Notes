@@ -23,7 +23,8 @@ body {
 .separador{
   display: flex;
   align-items: center;
-  gap:800%;
+  width: 800px;
+  justify-content: space-between;
 }
 
 .delete-button {
