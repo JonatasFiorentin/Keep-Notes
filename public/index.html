@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/23e158f08b.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      let indiceDaLista = 0
+
+      function removerItem() {
+        const item = document.getElementById('produto')
+        item.remove()
+      }
+
+      function adicionarItem() {
+        const inputDoUsuario = document.getElementById('texto-usuario')
+        const textoDigitado = inputDoUsuario.value
+
+        inputDoUsuario.value = ''
+
+        const lista = document.getElementById('container')
+
+        lista.innerHTML += `
+          <div class="produto" id="produto">
+            <input type="checkbox" name="produto" id="produto" />
+            <div class="separador">
+              <p>${textoDigitado}</p>
+              <button class="delete-button" onclick="removerItem()">
+                <i class="fa-solid fa-x"></i>
+              </button>
+            </div>
+          </div>
+        `
+
+        indiceDaLista++
+      }
+    </script>
+  </head>
+  <body>
+    <div id="container">
+      <div class="input">
+        <div class="button">
+          <button onclick="adicionarItem()">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+        <input type="text" placeholder="List item" id="texto-usuario" />
+      </div>
+    </div>
+  </body>
+</html>
