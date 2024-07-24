@@ -8,37 +8,11 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
-    <link rel="stylesheet" href="styleheader.css" />
+    <link rel="stylesheet" href="styleDoHeader.css" />
     <script
       src="https://kit.fontawesome.com/23e158f08b.js"
       crossorigin="anonymous"
     ></script>
-    <script>
-      function removerItem(itemDigitado) {
-        itemDigitado.parentElement.parentElement.remove()
-      }
-
-      function adicionarItem() {
-        const inputDoUsuario = document.getElementById('texto-usuario')
-        const textoDigitado = inputDoUsuario.value
-
-        inputDoUsuario.value = ''
-
-        const lista = document.getElementById('container')
-
-        lista.innerHTML += `
-          <div class="produto" id="produto">
-            <input type="checkbox" name="produto" id="produto" />
-            <div class="separador">
-              <p>${textoDigitado}</p>
-              <button class="delete-button" onclick="removerItem(this)">
-                <i class="fa-solid fa-x"></i>
-              </button>
-            </div>
-          </div>
-        `
-      }
-    </script>
   </head>
   <body>
     <header>
@@ -57,6 +31,7 @@
         <a href="https://keepnotes-64932.web.app/">ATIVIDADE 2</a>
       </div>
     </div>
+
     <div class="banner">LISTA DE ITENS</div>
     <div id="container">
       <div class="input">
@@ -69,4 +44,31 @@
       </div>
     </div>
   </body>
+
+  <script>
+    function removerItem(itemDigitado) {
+      itemDigitado.parentElement.parentElement.remove()
+    }
+
+    function adicionarItem() {
+      const inputDoUsuario = document.getElementById('texto-usuario')
+      const textoDigitado = inputDoUsuario.value
+
+      inputDoUsuario.value = ''
+
+      const lista = document.getElementById('container')
+
+      lista.innerHTML += `
+        <div class="produto" id="produto">
+          <input type="checkbox" name="produto" id="produto" />
+          <div class="separador">
+            <p>${textoDigitado}</p>
+            <button class="delete-button" onclick="removerItem(this)">
+              <i class="fa-solid fa-x"></i>
+            </button>
+          </div>
+        </div>
+      `
+    }
+  </script>
 </html>

@@ -1,0 +1,175 @@
+header{
+display: flex;
+flex-direction: row;
+background-color: white;
+width: 100vw;
+gap: 50px;
+}
+
+.maior{
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+  margin-left: 130px;
+}
+
+.imglogo{
+  width: 600px;
+}
+.contato{
+  font-family: "Poppins", sans-serif;
+  margin-top: 30px;
+  color: #d1d1d1;
+}
+
+.area-restrita{
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #0080c1;
+  background: #fff;
+  color: #0080c1;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+  font-size: 14px;
+  font-weight: bolder;
+  height: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.area-restrita:hover{
+  background-color: #0080c1;
+  color: white;
+}
+
+.links{
+  display: flex;
+  background-color: #0080c1;
+  height: 60px;
+  margin-bottom: 20vh;
+  width: 100vw;
+}
+
+.links a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+  height: 60px;
+  transition: 300ms;
+}
+
+.textos-links{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100vw;
+  margin-left: 200px;
+  margin-right: 200px;
+  align-items: center;
+}
+
+.links a:hover{
+  background-color: rgba(128, 128, 128, 0.229);
+  
+}
+
+@media (max-width: 500px) {
+  header {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .maior{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  /* .maior img{
+    width: 100px;
+    height: 100px;
+  } */
+
+  .textos-links{
+    display: flex;
+    width: 100vw;
+    margin: 0;
+  }
+
+  .area-restrita{
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #0080c1;
+  background: #fff;
+  color: #0080c1;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+  font-size: 14px;
+  font-weight: bolder;
+  height: 30%;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 5%;
+  }
+
+  .contato{
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+    color: #d1d1d1;
+    margin-right: 05%;
+  }
+}
+
+
+
+@media (min-width: 501px) and (max-width: 1020px) {
+  header {
+    width: 100vw;
+  }
+
+  .maior{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  /* .maior img{
+    width: 100px;
+    height: 100px;
+  } */
+
+  .textos-links{
+    display: flex;
+    width: 100vw;
+    margin: 0;
+  }
+
+  .area-restrita{
+  font-family: "Poppins", sans-serif;
+  border: 1px solid #0080c1;
+  background: #fff;
+  color: #0080c1;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.5s;
+  font-size: 14px;
+  font-weight: bolder;
+  height: 30%;
+  text-align: center;
+  margin-top: 20px;
+  margin-right: 5%;
+  }
+
+  .contato{
+    font-family: "Poppins", sans-serif;
+    margin-top: 20px;
+    color: #d1d1d1;
+    margin-right: 05%;
+  }
+}
