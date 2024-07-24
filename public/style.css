@@ -45,6 +45,7 @@ body {
   align-items: center;
   gap: 10px;
   font-size: 20px;
+  margin-left:08px;
 }
 
 
@@ -56,8 +57,8 @@ cursor: pointer;
 
 
 #produto button{
-  width: 15px;
-  height: 15px;
+  width: 23px;
+  height: 23px;
   border: none;
   background-color: transparent;
   transition: 0.5s;
@@ -82,10 +83,9 @@ cursor: pointer;
   outline: none;
 }
 
+
 .input button{
-  width: 15px;
   height: 15px;
-  display: flex;
   justify-content: center;
   align-items: center;
   border: none;
@@ -104,5 +104,20 @@ cursor: pointer;
   width: 15px;
   height: 15px;
   
+}
+
+@media (max-width: 500px) {
+  #container {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+
+@media (min-width: 501px) and (max-width: 900px) {
+  #container {
+    width: 100%;
+    max-width: 500px;
+  }
 }
 
