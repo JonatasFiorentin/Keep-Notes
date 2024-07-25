@@ -123,6 +123,10 @@ gap: 50px;
     color: #d1d1d1;
     margin-right: 05%;
   }
+
+  .contato{
+    display: none;
+  }
 }
 
 
