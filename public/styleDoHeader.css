@@ -171,9 +171,10 @@ gap: 50px;
   }
 
   .contato{
-    font-family: "Poppins", sans-serif;
+    /* font-family: "Poppins", sans-serif;
     margin-top: 20px;
     color: #d1d1d1;
-    margin-right: 05%;
+    margin-right: 05%; */
+    display: none;
   }
 }
